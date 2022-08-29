@@ -2,7 +2,7 @@
 %global   i3ipc_version 2.2.1
 
 Name     : autotiling
-Version  : 1.6
+Version  : 1.6.1
 Release  : 1
 URL      : https://github.com/nwg-piotr/autotiling
 Source0  : https://github.com/nwg-piotr/autotiling/archive/refs/tags/v%{version}.tar.gz
