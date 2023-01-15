@@ -32,6 +32,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 mkdir buildir
 python -m pip install autotiling i3ipc python-xlib six --target builddir
 rm -rf builddir/*.dist-info
+find builddir -depth -type d -name __pycache__ -exec rm -rf '{}' \;
 python -m zipapp builddir -m autotiling:main -p /usr/sbin/python -c -o autotiling
 
 
